@@ -3,80 +3,139 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Anand Kumar</title>
+<title>an4ndlabs</title>
 <style>
   :root {
-    --bg: #f6f7f9;
-    --card: #ffffff;
-    --text: #1a1d21;
-    --muted: #5f6b76;
-    --border: #e1e5ea;
-    --accent: #2563eb;
+    --bg: #f2f1ed;
+    --text: #1a1a1a;
+    --title: #1b2a4a;
+    --muted: #6b6a66;
+    --link: #1b2a8a;
+    --visited: #5a4a7a;
+    --rule: #d3d1ca;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #0f1216;
-      --card: #181c22;
-      --text: #eef1f4;
-      --muted: #9aa5b1;
-      --border: #272d35;
-      --accent: #6ea0ff;
+      --bg: #121417;
+      --text: #e8e6e1;
+      --title: #a9c1ff;
+      --muted: #8f8d87;
+      --link: #8fb0ff;
+      --visited: #b9a6e6;
+      --rule: #2c2f34;
     }
   }
   * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0;
-    min-height: 100vh;
     background: var(--bg);
     color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    padding: 48px 20px;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    padding: 56px 22px 48px;
   }
-  main { width: 100%; max-width: 420px; }
-  h1 { font-size: 28px; margin: 0 0 6px; text-align: center; }
-  p.sub { color: var(--muted); text-align: center; margin: 0 0 32px; font-size: 15px; }
-  a.link {
-    display: block;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 16px 18px;
-    margin-bottom: 12px;
-    text-decoration: none;
-    color: var(--text);
+  main { max-width: 620px; margin: 0 auto; }
+  h1 {
+    font-size: 48px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0 0 8px;
+    color: var(--title);
   }
-  a.link:hover, a.link:focus { border-color: var(--accent); }
-  a.link strong { display: block; font-size: 16px; }
-  a.link span { color: var(--muted); font-size: 13px; }
+  .sub { color: var(--muted); font-size: 18px; margin: 0 0 40px; }
+  h2 { font-size: 24px; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .note {
+    font-family: "Noto Serif", Georgia, "Times New Roman", serif;
+    color: var(--muted);
+    font-size: 17px;
+    margin: 0 0 20px;
+  }
+  section { margin-bottom: 48px; }
+  ol { list-style: none; padding: 0; margin: 0; }
+  li { display: flex; gap: 18px; padding: 5px 0; font-size: 18px; }
+  li .n {
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 14px;
+    color: var(--muted);
+    padding-top: 4px;
+    min-width: 22px;
+  }
+  a { color: var(--link); text-decoration: underline; text-underline-offset: 3px; }
+  a:visited { color: var(--visited); }
+  a.out::after { content: " \2197"; color: var(--muted); font-size: 0.8em; text-decoration: none; display: inline-block; }
+  .rule { position: relative; border: 0; border-top: 1px solid var(--rule); margin: 0 0 28px; }
+  .rule::before {
+    content: "+";
+    position: absolute;
+    top: -13px;
+    left: -3px;
+    background: var(--bg);
+    color: var(--muted);
+    font-size: 20px;
+    line-height: 1;
+    padding-right: 4px;
+  }
+  footer { font-size: 15px; color: var(--muted); }
+  footer .name { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+  footer p { margin: 0 0 10px; }
+  .mono { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 14px; }
 </style>
 </head>
 <body>
 <main>
-  <h1>Anand Kumar</h1>
-  <p class="sub">My accounts, all in one place</p>
 
-  <a class="link" href="https://github.com/login" target="_blank" rel="noopener">
-    <strong>GitHub</strong>
-    <span>Log in</span>
-  </a>
+  <h1>an4ndlabs</h1>
+  <p class="sub">anand kumar</p>
 
-  <a class="link" href="https://app.tuta.com/login" target="_blank" rel="noopener">
-    <strong>Tuta Mail</strong>
-    <span>Log in</span>
-  </a>
+  <section>
+    <h2>tools</h2>
+    <p class="note">places i log in to most. each link goes to the login page.</p>
+    <ol>
+      <li><span class="n">01</span><a class="out" href="https://archive.org/account/login" target="_blank" rel="noopener">archive.org</a></li>
+      <!-- Anna’s Archive: add your own link here (its domains change often). Replace the # below. -->
+      <li><span class="n">02</span><a class="out" href="#" target="_blank" rel="noopener">anna’s archive</a></li>
+      <li><span class="n">03</span><a class="out" href="https://app.tuta.com/login" target="_blank" rel="noopener">tutamail</a></li>
+      <li><span class="n">04</span><a class="out" href="https://account.proton.me/login" target="_blank" rel="noopener">protonmail</a></li>
+      <li><span class="n">05</span><a class="out" href="https://x.com/i/flow/login" target="_blank" rel="noopener">x.com</a></li>
+      <li><span class="n">06</span><a class="out" href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener">instagram</a></li>
+      <li><span class="n">07</span><a class="out" href="https://archive.is" target="_blank" rel="noopener">archive.is</a></li>
+    </ol>
+  </section>
 
-  <a class="link" href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin" target="_blank" rel="noopener">
-    <strong>Wikipedia</strong>
-    <span>Log in</span>
-  </a>
+  <section>
+    <h2>readings</h2>
+    <p class="note">where i go to keep up. these open the home pages.</p>
+    <ol>
+      <li><span class="n">01</span><a class="out" href="https://thewire.in" target="_blank" rel="noopener">the wire</a></li>
+      <li><span class="n">02</span><a class="out" href="https://reporters-collective.in" target="_blank" rel="noopener">the reporters’ collective</a></li>
+    </ol>
+  </section>
 
-  <a class="link" href="https://archive.org/account/login" target="_blank" rel="noopener">
-    <strong>Internet Archive</strong>
-    <span>Log in</span>
-  </a>
+  <section>
+    <h2>research papers</h2>
+    <p class="note">nothing published yet.</p>
+  </section>
+
+  <section>
+    <h2>contact</h2>
+    <p class="note">for work or research related things:</p>
+    <p class="mono"><a href="#" id="mail">anand.labs.in [at] gmail.com</a></p>
+  </section>
+
+  <hr class="rule">
+
+  <footer>
+    <p><span class="name">an4ndlabs.github.io</span></p>
+    <p>written by anand kumar.</p>
+  </footer>
+
 </main>
+<script>
+  document.getElementById("mail").addEventListener("click", function (e) {
+    e.preventDefault();
+    window.location.href = "mailto:" + "anand.labs.in" + "@" + "gmail.com";
+  });
+</script>
 </body>
-</ht
-  ml>
+</html>
