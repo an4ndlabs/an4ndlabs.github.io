@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>blog · an4ndlabs</title>
+<style>
+  :root {
+    --bg: #f2f1ed;
+    --text: #1a1a1a;
+    --title: #1b2a4a;
+    --muted: #6b6a66;
+    --link: #1b2a8a;
+    --visited: #5a4a7a;
+    --rule: #d3d1ca;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --text: #ece9e3;
+      --title: #a9c1ff;
+      --muted: #8f8d87;
+      --link: #ece9e3;
+      --visited: #b9a6e6;
+      --rule: #232529;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px 22px 40px;
+  }
+  .serif { font-family: "Noto Serif", Georgia, "Times New Roman", serif; }
+  .brand {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--text);
+    text-decoration: none;
+  }
+  main { max-width: 620px; margin: 64px auto 0; }
+  .back { font-size: 14px; color: var(--muted); text-decoration: none; }
+  .back:hover { color: var(--text); }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 18px 0 8px;
+    color: var(--title);
+  }
+  .lede { color: var(--muted); font-size: 17px; margin: 0 0 6px; }
+  .lede.small { font-size: 15px; }
+  .list { margin-top: 40px; border-top: 1px solid var(--rule); }
+  .post {
+    display: block;
+    padding: 20px 0 22px;
+    border-bottom: 1px solid var(--rule);
+    text-decoration: none;
+    color: var(--text);
+  }
+  .post .date {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .post .title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    line-height: 1.3;
+    color: var(--text);
+  }
+  .post .title::after { content: " \2197"; color: var(--muted); font-size: 0.75em; }
+  .post:hover .title { text-decoration: underline; text-underline-offset: 3px; }
+  footer {
+    max-width: 620px;
+    margin: 56px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  footer a { color: var(--muted); text-decoration: none; margin-left: 18px; }
+  footer a:hover { color: var(--text); }
+  footer .brand { color: var(--muted); font-size: 15px; }
+</style>
+</head>
+<body>
+
+<a class="brand" href="../">an4ndlabs</a>
+
+<main>
+  <a class="back" href="../">&larr; back home</a>
+  <h1>Blog</h1>
+  <p class="lede">Writing on medicine, evidence, and whatever else I’m working through.</p>
+  <p class="lede small">Posts are published on Substack and open in a new tab.</p>
+
+  <div class="list">
+    <a class="post" href="https://an4nd.substack.com/p/does-what-a-medical-student-wears" target="_blank" rel="noopener">
+      <span class="date">November 16, 2026</span>
+      <span class="title">Does What a Medical Student Wears Make a Better Doctor?</span>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <a class="brand" href="../" style="margin-left:0">an4ndlabs</a>
+  <span>
+    <a href="https://github.com/an4ndlabs" target="_blank" rel="noopener">github</a>
+    <a href="https://an4nd.substack.com" target="_blank" rel="noopener">substack</a>
+  </span>
+</footer>
+
+</body>
+</h
+  tml>
